@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\BookSale\BookSale\bin\Debug\BookSale.exe.config
+C:\Users\Administrator\Desktop\BookSale\BookSale\bin\Debug\BookSale.exe
+C:\Users\Administrator\Desktop\BookSale\BookSale\bin\Debug\BookSale.pdb
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.HeThong.resources
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.Properties.Resources.resources
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.SanPham.resources
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.exe
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.pdb
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.TrangChu.resources
