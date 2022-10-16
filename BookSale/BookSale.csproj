@@ -46,13 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HeThong.Designer.cs">
       <DependentUpon>HeThong.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\ConnectionDB.cs" />
+    <Compile Include="Models\khachhang.cs" />
+    <Compile Include="Models\nhanvien.cs" />
     <Compile Include="Models\sach.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,8 +82,14 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeThong.resx">
       <DependentUpon>HeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +131,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\open-book %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Education Background vector 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Education Background vector 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Education Background vector 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Education Background vector 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-back-to-school-background-template-school-supplies-on-white-background-vector.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
