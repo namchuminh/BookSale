@@ -73,6 +73,46 @@ namespace BookSale.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Education_Background_vector_2 {
+            get {
+                object obj = ResourceManager.GetObject("Education Background vector 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Education_Background_vector_21 {
+            get {
+                object obj = ResourceManager.GetObject("Education Background vector 21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Education_Background_vector_22 {
+            get {
+                object obj = ResourceManager.GetObject("Education Background vector 22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Education_Background_vector_23 {
+            get {
+                object obj = ResourceManager.GetObject("Education Background vector 23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -96,6 +136,17 @@ namespace BookSale.Properties {
         internal static System.Drawing.Bitmap open_book__1_ {
             get {
                 object obj = ResourceManager.GetObject("open-book (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcome_back_to_school_background_template_school_supplies_on_white_background_vector {
+            get {
+                object obj = ResourceManager.GetObject("welcome-back-to-school-background-template-school-supplies-on-white-background-ve" +
+                        "ctor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

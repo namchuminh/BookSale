@@ -178,5 +178,39 @@ namespace BookSale
                 }
             }
         }
+        void searchData(string TenSach)
+        {
+            try
+            {
+                List<sach> lstSach = new List<sach>();
+                conn.Open();
+                query = $"SELECT * FROM Sach WHERE TenSach LIKE N'%{TenSach}%' ";
+                cmd = new SqlCommand(query, conn);
+                data = cmd.ExecuteReader();
+                while (data.Read())
+                {
+                    sach book = new sach();
+                    book.MaSach = (string)data["MaSach"];
+                    book.TenSach = (string)data["TenSach"];
+                    book.NhaXuatBan = (string)data["NhaXuatBan"];
+                    book.TacGia = (string)data["TacGia"];
+                    book.MaChuyenMuc = (string)data["MaChuyenMuc"];
+                    book.GiaBan = (decimal)data["GiaBan"];
+                    book.SoLuong = (int)data["SoLuong"];
+                    book.TrangThai = (string)data["TrangThai"];
+                    lstSach.Add(book);
+                }
+                dgvSanPham.DataSource = lstSach;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            searchData(textBox9.Text);
+        }
     }
 }
