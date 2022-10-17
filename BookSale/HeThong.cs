@@ -95,5 +95,22 @@ namespace BookSale
         {
             loadform(new KhachHang());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien());
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            DialogResult delete = MessageBox.Show("Bạn Muốn Đăng Xuất", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (delete == DialogResult.Yes)
+            {
+                this.Close();
+                DangNhap dangNhap = new DangNhap();
+                dangNhap.ShowDialog();
+            }
+            
+        }
     }
 }
