@@ -163,5 +163,100 @@ namespace BookSale
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void btnXoaNV_Click(object sender, EventArgs e)
+        {
+            DialogResult delete = MessageBox.Show("Bạn Thực Sự Muốn Xóa Nhân Viên Này?", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (delete == DialogResult.Yes)
+            {
+                try
+                {
+                    conn.Open();
+                    query = $"DELETE NhanVien WHERE MaNV = '{textBox1.Text}';";
+                    cmd = new SqlCommand(query, conn);
+                    int result = cmd.ExecuteNonQuery();
+                    conn.Close();
+                    if (result == 1)
+                    {
+                        getData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa Nhân Viên Không Thành Công!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
+        void searchData(string TenNV)
+        {
+            try
+            {
+                List<nhanvien> lstNV = new List<nhanvien>();
+                conn.Open();
+                query = $"SELECT * FROM NhanVien WHERE TenNV LIKE N'%{TenNV}%' ";
+                cmd = new SqlCommand(query, conn);
+                data = cmd.ExecuteReader();
+                while (data.Read())
+                {
+                    nhanvien objNV = new nhanvien();
+                    objNV.MaNV = (string)data["MaNV"];
+                    objNV.TenNV = (string)data["TenNV"];
+                    objNV.TaiKhoan = (string)data["TaiKhoan"];
+                    objNV.MatKhau = (string)data["MatKhau"];
+                    objNV.ChucVu = (string)data["ChucVu"];
+                    objNV.SoDienThoai = (string)data["SoDienThoai"];
+                    lstNV.Add(objNV);
+                }
+                dgvNhanVien.DataSource = lstNV;
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            searchData(textBox9.Text);
+        }
+
+        private void btnChamCongNV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime dateTime = DateTime.UtcNow.Date;
+                string ThoiGian = dateTime.ToString("yyyy-MM-dd");
+                conn.Open();
+                query = $"SELECT COUNT(*) FROM ChamCong WHERE MaNV = '{textBox1.Text}' AND ThoiGian = '{ThoiGian}'";
+                cmd = new SqlCommand(query, conn);
+                int daChamCong = (int)cmd.ExecuteScalar();
+                if(daChamCong != 1) {
+                    query = $"INSERT INTO ChamCong(MaNV,ThoiGian) VALUES ('{textBox1.Text}','{ThoiGian}')";
+                    cmd = new SqlCommand(query, conn);
+                    int result = cmd.ExecuteNonQuery();
+                    if(result == 1)
+                    {
+                        MessageBox.Show($"Thành Công! Đã Chấm Công Cho Nhân Viên {textBox1.Text}", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Có Lỗi Khi Chấm Công {textBox1.Text}! Vui Lòng Thử Lại!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"Nhân Viên {textBox1.Text} Đã Chấm Công Cho Hôm Nay!", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
     }
 }

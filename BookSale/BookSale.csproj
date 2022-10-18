@@ -64,6 +64,7 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\chamcong.cs" />
     <Compile Include="Models\ConnectionDB.cs" />
     <Compile Include="Models\khachhang.cs" />
     <Compile Include="Models\nhanvien.cs" />
