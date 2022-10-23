@@ -14,3 +14,5 @@ C:\Users\Administrator\Desktop\BookSale\BookSale\bin\Debug\BookSale.pdb
 C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.exe
 C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.pdb
 C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.NhanVien.resources
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.HoaDon.resources
+C:\Users\Administrator\Desktop\BookSale\BookSale\obj\Debug\BookSale.csproj.ResolveComReference.cache

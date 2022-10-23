@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,6 +46,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnXoaSach = new System.Windows.Forms.Button();
             this.btnSuaSach = new System.Windows.Forms.Button();
@@ -85,23 +85,6 @@
             this.groupBox1.Size = new System.Drawing.Size(419, 154);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(326, 11);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Tìm Kiếm Theo Tên Sách";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(6, 30);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(781, 20);
-            this.textBox9.TabIndex = 16;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // label5
             // 
@@ -231,6 +214,23 @@
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 0;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(326, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Tìm Kiếm Theo Tên Sách";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(6, 30);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(781, 20);
+            this.textBox9.TabIndex = 16;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -304,14 +304,14 @@
             this.dgvSanPham.Location = new System.Drawing.Point(1, 230);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSanPham.Size = new System.Drawing.Size(797, 339);
             this.dgvSanPham.TabIndex = 2;

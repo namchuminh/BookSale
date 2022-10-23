@@ -19,13 +19,15 @@ namespace BookSale
         string query;
         SqlCommand cmd;
         SqlDataReader data;
+        string TaiKhoan;
         public HeThong(string TaiKhoan)
         {
             InitializeComponent();
             loadform(new TrangChu());
             ConnectionDB connectionDB = new ConnectionDB();
             conn = connectionDB.ConnectDB();
-            getName(TaiKhoan);
+            this.TaiKhoan = TaiKhoan;
+            getName(this.TaiKhoan);
         }
 
         void getName(string TaiKhoan)
@@ -52,8 +54,6 @@ namespace BookSale
                 button5.Hide();
                 button6.Hide();
             }
-
-
         }
 
         void loadform(object Form)
@@ -111,6 +111,11 @@ namespace BookSale
                 dangNhap.ShowDialog();
             }
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            loadform(new HoaDon(this.TaiKhoan));
         }
     }
 }

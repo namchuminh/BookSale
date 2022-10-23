@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel_side = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -43,9 +42,10 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_side.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_side
@@ -64,15 +64,6 @@
             this.panel_side.Name = "panel_side";
             this.panel_side.Size = new System.Drawing.Size(209, 570);
             this.panel_side.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BookSale.Properties.Resources.open_book__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 136);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button7
             // 
@@ -143,6 +134,7 @@
             this.button3.Text = "HÓA ĐƠN";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -269,6 +261,15 @@
             this.panel_main.Size = new System.Drawing.Size(791, 570);
             this.panel_main.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BookSale.Properties.Resources.open_book__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(37, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 136);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // HeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,9 +284,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PHẦN MỀM QUẢN LÝ CỬA HÀNG BOOKSALE";
             this.panel_side.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
