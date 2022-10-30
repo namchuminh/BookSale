@@ -117,5 +117,10 @@ namespace BookSale
         {
             loadform(new HoaDon(this.TaiKhoan));
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadform(new ThongKe());
+        }
     }
 }
