@@ -158,13 +158,13 @@ namespace BookSale
             btnHomNay.ForeColor = SystemColors.Window;
 
             conn.Open();
-            query = "SELECT COUNT(HoaDon.MaHD) AS SoLuongHoaDon FROM HoaDon WHERE ThoiGian < GETDATE() AND ThoiGian > GETDATE() - 1";
+            query = "SELECT COUNT(HoaDon.MaHD) AS SoLuongHoaDon FROM HoaDon WHERE FORMAT(ThoiGian, 'yyyy-MM-dd') = FORMAT(GETDATE(), 'yyyy-MM-dd')";
             cmd = new SqlCommand(query, conn);
             int soLuongHoaDon = (int)cmd.ExecuteScalar();
             lblSoHoaDon.Text = soLuongHoaDon.ToString();
 
             //Doanh thu
-            query = "SELECT SUM(HoaDon.TongTien) AS TongDoanhThu FROM HoaDon WHERE ThoiGian < GETDATE() AND ThoiGian > GETDATE() - 1";
+            query = "SELECT SUM(HoaDon.TongTien) AS TongDoanhThu FROM HoaDon WHERE FORMAT(ThoiGian, 'yyyy-MM-dd') = FORMAT(GETDATE(), 'yyyy-MM-dd')";
             cmd = new SqlCommand(query, conn);
             lblTongDoanhThu.Text = cmd.ExecuteScalar().ToString();
 
@@ -181,7 +181,7 @@ namespace BookSale
             conn.Close();
 
             //Tong doanh thu
-            SqlDataAdapter ad = new SqlDataAdapter("SELECT ThoiGian, SUM (TongTien) AS TongTien FROM HoaDon WHERE ThoiGian < GETDATE() AND ThoiGian > GETDATE() - 1 GROUP BY ThoiGian", conn);
+            SqlDataAdapter ad = new SqlDataAdapter("SELECT ThoiGian, SUM (TongTien) AS TongTien FROM HoaDon WHERE FORMAT(ThoiGian, 'yyyy-MM-dd') = FORMAT(GETDATE(), 'yyyy-MM-dd') GROUP BY ThoiGian", conn);
             DataTable dt = new DataTable();
             ad.Fill(dt);
             chart1.DataSource = dt;
@@ -191,7 +191,7 @@ namespace BookSale
             chart1.Series["Series1"].YValueMembers = "TongTien";
 
             //Top 5 san pham ban chay
-            SqlDataAdapter adt = new SqlDataAdapter("SELECT TOP 5 HoaDon.MaSach, COUNT(HoaDon.MaSach) AS SoLuong FROM HoaDon WHERE ThoiGian < GETDATE() AND ThoiGian > GETDATE() - 1 GROUP BY MaSach ", conn);
+            SqlDataAdapter adt = new SqlDataAdapter("SELECT TOP 5 HoaDon.MaSach, COUNT(HoaDon.MaSach) AS SoLuong FROM HoaDon WHERE FORMAT(ThoiGian, 'yyyy-MM-dd') = FORMAT(GETDATE(), 'yyyy-MM-dd') GROUP BY MaSach ", conn);
             DataTable dtl = new DataTable();
             adt.Fill(dtl);
             chartSPBC.DataSource = dtl;

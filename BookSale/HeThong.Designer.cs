@@ -100,7 +100,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Arrus-Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Window;
-            this.button6.Location = new System.Drawing.Point(26, 434);
+            this.button6.Location = new System.Drawing.Point(26, 429);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(158, 41);
             this.button6.TabIndex = 5;
@@ -118,7 +118,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arrus-Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Window;
-            this.button5.Location = new System.Drawing.Point(26, 378);
+            this.button5.Location = new System.Drawing.Point(26, 373);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(158, 41);
             this.button5.TabIndex = 4;
@@ -136,7 +136,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arrus-Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Window;
-            this.button3.Location = new System.Drawing.Point(26, 321);
+            this.button3.Location = new System.Drawing.Point(26, 316);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 41);
             this.button3.TabIndex = 3;
@@ -154,7 +154,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arrus-Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Window;
-            this.button4.Location = new System.Drawing.Point(26, 263);
+            this.button4.Location = new System.Drawing.Point(26, 258);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(158, 41);
             this.button4.TabIndex = 2;
@@ -172,12 +172,12 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arrus-Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(26, 206);
+            this.button1.Location = new System.Drawing.Point(26, 201);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 41);
             this.button1.TabIndex = 1;
             this.button1.TabStop = false;
-            this.button1.Text = "SẢN  PHẨM";
+            this.button1.Text = "QUẢN LÝ SÁCH";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
